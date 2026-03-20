@@ -1,0 +1,10 @@
+.vscode/
+
+.idea/
+*.iml
+
+*.swp
+*.swo
+*~
+
+!.gitkeep

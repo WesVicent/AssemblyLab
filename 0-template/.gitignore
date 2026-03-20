@@ -1,0 +1,58 @@
+out/
+
+*.o
+*.obj
+*.elf
+*.out
+*.bin
+*.hex
+*.img
+*.iso
+
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Symbols/Dumps
+*.dbg
+*.pdb
+*.dSYM/
+*.core
+
+# NASM / GAS temp files
+*.lst
+*.map
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+.vscode/
+
+.idea/
+*.iml
+
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+*.log
+.env.local
+
+# Debuggers / tools
+gmon.out
+
+# QEMU / OSDev artifacts
+*.qcow2
+*.vdi
+*.vmdk
+
+!.gitkeep
