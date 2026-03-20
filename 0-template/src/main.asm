@@ -6,14 +6,19 @@ section .text
     global _start
 
 _start:
-    ; write(1, msg, len)
-    mov rax, 1          ; syscall: write
-    mov rdi, 1          ; fd: stdout
-    mov rsi, msg        ; buffer
-    mov rdx, len        ; length
-    syscall
+    mov rsi, msg      ; std_out buffer
+    mov rdx, len      ; std_out length
+    call std_out
 
-    ; exit(0)
     mov rax, 60         ; syscall: exit
     xor rdi, rdi        ; status = 0
     syscall
+    
+; RSI std_out buffer
+; RDX std_out length
+std_out:
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; fd: stdout
+
+    syscall
+    ret
