@@ -1,4 +1,0 @@
-*.sh text eol=lf
-*.bash text eol=lf
-*.asm eol=lf
-*.txt eol=lf
